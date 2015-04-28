@@ -49,3 +49,32 @@ A URL may look like this:
 Once you have a URL that you know works, post it in your `tlk.io` channel
 
 Hint: Note this is a bit tricky to Google because Cloud9's documentation isn't too good. Play around in Cloud9 until you think you may find a way to get this. As soon as you find out, let your club leader know!
+
+# v1
+
+Before being able to proceed to step v3, everyone must have created their user profile or else Zeus will not be happy!
+
+# v2
+
+`BEFORE STARTING THIS CHALLENGE, CREATE A NEW WORKSPACE`
+
+Now the challenging part, instead of having to manually add each person , Zeus wants to be able to consider ALL of facebook to be his matches instead of having people having to mail in their profile details. So, based on someone's facebook username, Zeus wants to be able to see their photo and username (like above).
+
+My facebook username  is `jonleung137`. So Zeus wants it so that if I type in `https://PROJECT-NAME-USERNAME.c9.io/jonleung137`, he expects to be able to see this:
+
+![image](http://i.imgur.com/Tuex18M.png)
+
+But if he types in ***ANY*** other facebook username, he expects that it will retrieve their photo with their username as well.
+
+This is going to be VERY HARD and it is expected that you will not finish in the time period. It is meant to push you and you are encouraged to finish at home!
+
+HINT: Use python flask webframework.
+
+Recommended Steps:
+
+1. Figure out how to display someone's facebook profile picture from username. (Googling how to do this by searching for `id` instead of `username` may be helpful
+2. Figure out how to even run a flask appliation on cloud9. This is a bit trickier than the normal flask instructions will tell you.
+3. Figure out how to use flask to display one person's profile using flask's routing system. So getting `/jonleung137` to work
+4. Figure out how to use flask's routing system to work for *ANY* Facebook username by using variable rules.
+
+## Recap
