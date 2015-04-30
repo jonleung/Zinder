@@ -1,7 +1,5 @@
 # The One Book of Faces To Rule Them All!!!
 
-<!--![image](http://i.imgur.com/Uz5B5c5.jpg)
--->
 Middle Earth is finally at peace and Gandalf decides to start a social network startup: The Book Of Faces.
 
 We have all been hired as The Book of Face's first employees!
