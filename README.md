@@ -1,80 +1,118 @@
-# Zinder
+# The One Book of Faces To Rule Them All!!!
 
-The Greek God Zeus is starting an online dating servce called Zinder. Zinder lets any users signup for a potential date with Zeus, and only zeus.
+![image](http://i.imgur.com/Uz5B5c5.jpg)
 
-Zinder's Tagline: "Why date anyone else when you can date Zeus?"™.
+Middle Earth is finally at peace and Gandalf decides to start a social network startup: The Book Of Faces.
 
-We have all been hired as Zinder's first employees.
+We have all been hired as The Book of Face's first employees!
 
+## V1 - Manual Website Creation
 
-## Setup
-Please open `talk.io` to your club's channel
+We will all be working in same c9.io workspace
 
+**Setup:**
 
-## v0
+1. Go to `bit.ly/book-of-faces`
+2. Login to your c9 account
+3. Click "Request Access"
+![image](http://i.imgur.com/Xl9f3EI.png)
 
-Time to complete v0 before Zeus smite's all of us: `13 minutes`
+**Your Job**
 
-### Step 1
+Users register for The Book Of Faces by sending in a piece of parchment with their username desired.
 
-Because Zinder is a luxury dating service, anyone who signs up has send in a piece of paper with their desired username and a link to their profile picture.
+When you get a piece of paper, your job is to:
 
-Zinder's developer teams (that's you) will then manually create Zinder profiles for each user with the following spec:
+1. Find an appropriate profile picture of them *(your users are very trusting)*
+2. Based on their username, create a simple webpage that 
 
-For example, for the data:
+	- is reachable at `https://book-of-faces-jonleung.c9.io/USERNAME.html`
+	- displays their profile picture
+	- displays their username
+	
+**Example**
 
-```
-username = "jonleung137"
-custom_picture = "http://i.imgur.com/eUUrzcj.jpg"
-```
+So for example, if you got a piece of parchment that said `"username: gmoney"`
+![image](http://i.imgur.com/e9LlqqX.png)
 
-The website should look like this:
+- you would be able to reach it at `https://book-of-faces-jonleung.c9.io/gmagic.html`
+- the site displays a profile picture
+- the site displays the username, `"gmagic"`
 
-![image](http://i.imgur.com/oJ3bKFx.png)
+**Objective**
+
+Your objective is to help as many users signup as possible! When you've signed up your first user, post into the tlk.io with the link to their profile.
+
+**Hints**
 
 Hint: To start off, create a file in [c9.io](http://c9.io) that is called `THE_PERSONS_USERNAME.html`
 
 Hint: Make sure the above file ends in `.html`
 
-Hint: Yes, duh, of course you will need to use Google to figure out how to make a webpage with a picture and a title if you don't know already! 
+Hint: Yes, duh, of course you will need to use Google to figure out how to make a webpage with a picture and a heading if you don't know do it already!
 
-### Step 2
+```
+Create A List Of Teams That Have Published On Whiteboard
+```
 
-Once you make the simple website in step 1, use Cloud9 to host your website so that it gives you a URL that lets you see the website in your browser and anyone else's browser that is connected to the internet.
+## V2 - Dynamic Website Creation
 
-A URL may look like this:
+![image](http://i.imgur.com/PBmGh9O.png) 
 
-`https://twilio-3-jonleung.c9.io/jonleung137.html`
+Congratulations, due to your hard work, Facebook has now purchased The Book of Faces for 19 Billion dollars. Now it is your job to incorperate every facebook user into into the Book of Faces application!
 
-Once you have a URL that you know works, post it in your `tlk.io` channel
+But manually creating more than 1 billion users is hard...
 
-Hint: Note this is a bit tricky to Google because Cloud9's documentation isn't too good. Play around in Cloud9 until you think you may find a way to get this. As soon as you find out, let your club leader know!
+**So now What?**
 
-# v1
+So now the challenging part, instead of having to manually having to add every Facebook user, Gandalf wants automatically add EVERY facebook user to The Book of Faces based on their Facebook username.
 
-Before being able to proceed to step v3, everyone must have created their user profile or else Zeus will not be happy!
-
-# v2
-
-`BEFORE STARTING THIS CHALLENGE, CREATE A NEW WORKSPACE`
-
-Now the challenging part, instead of having to manually add each person , Zeus wants to be able to consider ALL of facebook to be his matches instead of having people having to mail in their profile details. So, based on someone's facebook username, Zeus wants to be able to see their photo and username (like above).
-
-My facebook username  is `jonleung137`. So Zeus wants it so that if I type in `https://PROJECT-NAME-USERNAME.c9.io/jonleung137`, he expects to be able to see this:
+My facebook username  is `jonleung137`. So if Gandalf types in `https://PROJECT-NAME-USERNAME.c9.io/jonleung137`, he expects to be able to see this:
 
 ![image](http://i.imgur.com/Tuex18M.png)
 
 But if he types in ***ANY*** other facebook username, he expects that it will retrieve their photo with their username as well.
 
-This is going to be VERY HARD and it is expected that you will not finish in the time period. It is meant to push you and you are encouraged to finish at home!
+This is going to be VERY HARD!
 
-HINT: Use python flask webframework.
+**Let's Look At How Facebook Works**
 
-Recommended Steps:
+In the below steps, you will be learning how to build your own server! Let's learn about how Facebook's servers work.
 
-1. Figure out how to display someone's facebook profile picture from username. (Googling how to do this by searching for `id` instead of `username` may be helpful
-2. Figure out how to even run a flask appliation on cloud9. This is a bit trickier than the normal flask instructions will tell you.
-3. Figure out how to use flask to display one person's profile using flask's routing system. So getting `/jonleung137` to work
-4. Figure out how to use flask's routing system to work for *ANY* Facebook username by using variable rules.
+**Setup**
+
+1. Before starting this new challenege, create a new Cloud9 workspace.
+
+## Steps
+
+**Step 1**
+
+Figure out how to display someone's facebook profile picture from username. (Googling how to do this by searching for `id` instead of `username` may be helpful.
+
+Test in your browser if you can retrieve your own profile picture or my profile picture based on  our usernames `jonleung137`.
+
+**Step 2**
+
+Python flask is a server, that "real" people use including Pinterest, Twilio, Reeddit, and Barak Obama's 2012 campaign. Figure out how to even run a very basic python flask appliation on cloud9. Running it on cloud9 is a bit trickier than the normal flask instructions will tell you. 
+
+*HOW DID I KNOW?*—http://www.quora.com/What-is-the-largest-site-created-using-Flask
+
+Let's make sure we understand what's happening here.
+
+**Step 3**
+
+Figure out how to use flask to display one person's profile using flask's routing system. So try getting `/jonleung137` to work using your knowledge from step 1
+
+**Step 4**
+
+Figure out how to use flask's routing system to work for *ANY* Facebook username by using variable rules.
+
+So you want to be able to type in mine username, `/jonleung137`, Mark Zuckerberg's `/zuck`, or Obama's `/obama`.
+
+This is predominantly the cool part about using a server like Flask, it let's you create a dynamic response as opposed to using static HTML files.
 
 ## Recap
+
+What's a server?
+
+What can you do with a server?
